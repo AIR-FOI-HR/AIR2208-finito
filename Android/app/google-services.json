@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "795380535893-hmbos5b5ak5ljao6su18dn2pav98a0c2.apps.googleusercontent.com",
+          "client_id": "795380535893-vqkjlatn9tkm2kv75suh1a2td0ouai0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hr.foi.air.kolajna",
+            "certificate_hash": "2bbb7ad21edee97728b7b839a04af2bdb1ae649c"
+          }
+        },
+        {
+          "client_id": "795380535893-bevetu61pl5iafej1omo3kvghcs6rqtn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "795380535893-hmbos5b5ak5ljao6su18dn2pav98a0c2.apps.googleusercontent.com",
+              "client_id": "795380535893-bevetu61pl5iafej1omo3kvghcs6rqtn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
