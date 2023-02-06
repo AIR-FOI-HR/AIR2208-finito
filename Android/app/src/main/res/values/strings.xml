@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Kolajna</string>
+    <string name="prijavi_se">Prijavi se</string>
+    <string name="lozinka">Lozinka</string>
+    <string name="e_mail_adresa">E-mail adresa</string>
+    <string name="facebook_prijava">Prijava s Facebook računom</string>
+    <string name="google_login">Prijava s Google računom</string>
+    <string name="prijava_s_facebook_ra_unom">Prijava s Facebook računom</string>
+    <string name="prijava_s_google_ra_unom">Prijava s Google računom</string>
+    <string name="nema_ra_un_registriraj_se"><u>Nemaš račun? Registriraj se!</u></string>
+    <string name="profil">Profil</string>
+    <string name="po_etna">Početna</string>
+    <string name="kosarica">Košarica</string>
+    <string name="shop">Shop</string>
+    <string name="pocetna">Početna</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="ili_se_prijavi_s">ili se prijavi s</string>
+    <string name="zaboravljena_lozinka">Zaboravljena lozinka?</string>
+    <string name="zaboravljenaLozinka">Zaboravljena lozinka</string>
+
 </resources>
