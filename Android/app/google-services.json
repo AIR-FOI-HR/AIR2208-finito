@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "795380535893",
+    "project_id": "kolajna-9d300",
+    "storage_bucket": "kolajna-9d300.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795380535893:android:7ab93206252103f57ffadc",
+        "android_client_info": {
+          "package_name": "hr.foi.air.kolajna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795380535893-hmbos5b5ak5ljao6su18dn2pav98a0c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8ZgDtSGpCi71K6VX4qsqC6dwf9BrF4ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795380535893-hmbos5b5ak5ljao6su18dn2pav98a0c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

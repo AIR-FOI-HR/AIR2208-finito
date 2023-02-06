@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Kolajna"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Registracija"
             android:exported="false">
             <meta-data
