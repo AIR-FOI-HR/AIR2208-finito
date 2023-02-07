@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity() {
                 idPassword.requestFocus()
             }
             else {
-
                 val intent = Intent(this, Pocetna::class.java)
                 startActivity(intent)
                 finish()
@@ -122,8 +121,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun facebookSignIn() {
 
-        LoginManager.getInstance()
-        .logInWithReadPermissions(this, listOf("public_profile", "email", "user_friends"))
+        LoginManager.getInstance().logInWithReadPermissions(this, listOf("public_profile"))
         LoginManager.getInstance().registerCallback(callbackManager, object : FacebookCallback<LoginResult>{
             override fun onCancel() {
                 Toast.makeText(this@MainActivity, "Login otkazan", Toast.LENGTH_LONG).show()
@@ -140,8 +138,8 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun handleFacebookAccessToken(accessToken: AccessToken) {
-        val credential = FacebookAuthProvider.getCredential(accessToken.token)
+    private fun handleFacebookAccessToken(accessToken: AccessToken?) {
+        val credential = FacebookAuthProvider.getCredential(accessToken!!.token)
         auth.signInWithCredential(credential)
             .addOnFailureListener{ e->
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
@@ -178,7 +176,10 @@ class MainActivity : AppCompatActivity() {
 
     @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
         super.onActivityResult(requestCode, resultCode, data)
+
+        callbackManager!!.onActivityResult(requestCode, resultCode, data)
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
@@ -192,8 +193,6 @@ class MainActivity : AppCompatActivity() {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e)
             }
-        }else{
-            callbackManager?.onActivityResult(requestCode, resultCode, data)
         }
     }
 

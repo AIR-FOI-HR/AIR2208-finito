@@ -15,6 +15,15 @@
         android:background="#b8b8b8"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kolajnalogo"
+            android:contentDescription="@string/kolajna"
+            >
+
+        </ImageView>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +34,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="30dp"
                 android:background="@color/white"
                 android:elevation="100dp"
                 android:hint="@string/e_mail_adresa"
@@ -80,34 +89,32 @@
             android:layout_margin="10dp"
             />
 
-
         <ImageView
             android:id="@+id/googleBtn"
-            android:layout_width="300dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/rounded_corners"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
             android:backgroundTint="@color/white"
+            android:background="@drawable/circles"
             android:contentDescription="@string/google_login"
-            android:paddingEnd="230dp"
-            android:paddingStart="15dp"
             android:src="@drawable/google"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:text="@string/google"/>
+            android:text="@string/google"
+            />
 
         <ImageView
             android:id="@+id/facebookBtn"
             android:backgroundTint="@color/com_facebook_blue"
-            android:background="@drawable/rounded_corners"
+            android:background="@drawable/circles"
             android:src="@drawable/fcb"
-            android:layout_width="300dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="5dp"
+            android:padding="5dp"
             android:contentDescription="@string/facebook_prijava"
-            android:paddingEnd="230dp"
-            android:paddingStart="15dp"
             />
 
     </LinearLayout>
