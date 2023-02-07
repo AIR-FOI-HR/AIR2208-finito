@@ -56,14 +56,14 @@
             android:layout_height="wrap_content"
             android:text="@string/zaboravljena_lozinka"
             android:textColor="@color/black"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="10dp"
             android:backgroundTint="#ffd792"
             android:minHeight="40dp"
             android:padding="10dp"
@@ -77,32 +77,38 @@
             android:layout_height="wrap_content"
             android:text="@string/nema_ra_un_registriraj_se"
             android:textColor="@color/black"
-            android:layout_margin="30dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ili_se_prijavi_s"
-            android:textColor="@color/black"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="10dp"
             />
 
 
         <ImageView
             android:id="@+id/googleBtn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="20dp"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/white"
             android:contentDescription="@string/google_login"
-            android:src="@drawable/google" />
+            android:paddingEnd="230dp"
+            android:paddingStart="15dp"
+            android:src="@drawable/google"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="@string/google"/>
 
         <ImageView
             android:id="@+id/facebookBtn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:backgroundTint="@color/com_facebook_blue"
+            android:background="@drawable/rounded_corners"
+            android:src="@drawable/fcb"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
             android:contentDescription="@string/facebook_prijava"
-            android:src="@drawable/facebook" />
+            android:paddingEnd="230dp"
+            android:paddingStart="15dp"
+            />
 
     </LinearLayout>
 
